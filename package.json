@@ -1,0 +1,20 @@
+{
+    "name": "Angular-Form-Validation-Presentation",
+    "version": "0.0.0",
+    "description": "Presentation on form validation in Angular 1.X, versions 1.5 and higher",
+    "license": "BSD-3-Clause",
+    "author": "Gabe Miller <gmiller2007@gmail.com>",
+    "scripts": {
+        "start": "gulp all && gulp serve"
+    },
+    "devDependencies": {
+        "angular": "1.5.8",
+        "del": "2.2.2",
+        "gulp": "3.9.1",
+        "gulp-concat": "2.6.0",
+        "gulp-jshint": "2.0.1",
+        "gulp-ng-annotate": "2.0.0",
+        "gulp-webserver": "0.9.1",
+        "jshint": "2.9.3"
+    }
+}
