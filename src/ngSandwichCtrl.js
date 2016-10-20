@@ -11,6 +11,13 @@
         self.$onInit = $onInit;
         self.moveIngredient = moveIngredient;
 
+        /**
+         *  Per the angular docs
+         *
+         *  $require() is:
+         *      Called when the view needs to be updated.
+         *      It is expected that the user of the ng-model directive will implement this method.
+         */
         function $onInit() {
             self.ngModelCtrl.$render = $render;
             self.ngModelCtrl.$validators.bread = breadValidator;
@@ -18,6 +25,10 @@
 
         function $render() {
             self.model = self.ngModelCtrl.$modelValue;
+        }
+
+        function breadValidator(modelValue, viewValue) {
+            return (modelValue[0] === 'bread' && modelValue[modelValue.length - 1] === 'bread');
         }
 
         function moveIngredient(goingUp, index) {
@@ -34,10 +45,6 @@
             self.model.splice(toIndex, 0, ingredient);
 
             self.ngModelCtrl.$validate();
-        }
-
-        function breadValidator(modelValue, viewValue) {
-            return (modelValue[0] === 'bread' && modelValue[modelValue.length - 1] === 'bread');
         }
     }
 
