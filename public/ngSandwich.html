@@ -1,0 +1,13 @@
+<div style="display:inline-block; width:300px;">
+    <div class="sandwich">
+        <div
+            ng-repeat="ingredient in sandwich.model track by $index"
+            class="ingredient"
+            ng-class="[ingredient]">
+            <div class="movement-controls">
+                <button ng-click="sandwich.moveIngredient(true, $index)" type="button">&uarr;</button>
+                <button ng-click="sandwich.moveIngredient(false, $index)" type="button">&darr;</button>
+            </div>
+        </div>
+    </div>
+</div>

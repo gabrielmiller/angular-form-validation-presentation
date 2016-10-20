@@ -7,13 +7,7 @@
         <script src="app.js" type="text/javascript"></script>
     </head>
     <body>
-        <h1>Test 1</h1>
-        <div ng-controller="TestOne as one">
-            <span ng-bind="one.myText"></span>
-        </div>
-        <h1>Test 2</h1>
-        <div ng-controller="TestTwo as two">
-            <span ng-bind="two.myText"></span>
-        </div>
+        <div class="sample-one" ng-include="'sampleOne.html'"></div>
+        <div class="sample-two" ng-include="'sampleTwo.html'"></div>
     </body>
 </html>

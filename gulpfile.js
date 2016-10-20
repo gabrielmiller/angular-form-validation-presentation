@@ -51,7 +51,7 @@ gulp.task('js:app', function() {
 });
 
 gulp.task('js:libs', function() {
-    gulp.src('node_modules/angular/angular.js')
+    gulp.src(['node_modules/angular/angular.js', 'node_modules/angular-messages/angular-messages.js'])
         .pipe(gulpConcat('libs.js'))
         .pipe(gulp.dest(appDest));
 });

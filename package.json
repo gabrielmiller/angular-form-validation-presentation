@@ -9,6 +9,7 @@
     },
     "devDependencies": {
         "angular": "1.5.8",
+        "angular-messages": "1.5.8",
         "del": "2.2.2",
         "gulp": "3.9.1",
         "gulp-concat": "2.6.0",
@@ -16,5 +17,9 @@
         "gulp-ng-annotate": "2.0.0",
         "gulp-webserver": "0.9.1",
         "jshint": "2.9.3"
+    }
+    "repository": {
+        "type" : "git",
+        "url" : "https://github.com/gabrielmiller/angular-form-validation-presentation.git"
     }
 }

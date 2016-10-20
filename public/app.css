@@ -1,0 +1,115 @@
+body {
+    margin: 0;
+}
+
+.sample-one {
+    background-color: #e0e0e0;
+    height: 1000px;
+    padding-left: 100px;
+    padding-top: 100px;
+}
+
+.sample-one .input-wrapper {
+    width: 100%;
+}
+
+.sample-one input {
+    border: 1px solid black;
+    display: inline-block;
+    font-size: 20px;
+    margin: 5px;
+    padding: 10px;
+}
+
+.sample-one pre {
+    background-color: white;
+}
+
+.sample-one .error {
+    color: red;
+    display: inline-block;
+}
+
+.sample-one .error-object {
+    color: black;
+    display: inline-block;
+}
+
+.sample-one .invalid {
+    background-color: red;
+}
+
+.sample-one .valid {
+    background-color: green;
+}
+
+.sample-two {
+    height: 600px;
+    padding-top: 200px;
+    padding-left: 100px;
+}
+
+.ingredient {
+    height: 50px;
+}
+
+.ingredient.bread {
+    background-color: #f4d742;
+    background-image: url("img/bread.jpg");
+    border-radius: 5px;
+}
+
+.ingredient.cheese {
+    background-color: #f9ed3e;
+    background-image: url("img/cheese.jpg");
+}
+
+.ingredient.lettuce {
+    background-color: #236d19;
+    background-image: url("img/lettuce.jpg");
+}
+
+.ingredient.meat {
+    background-color: #7a4f09;
+    background-image: url("img/meat.jpg");
+}
+
+.ingredient.mustard {
+    background-color: #ffe500;
+    background-image: url("img/mustard.jpg");
+}
+
+.ingredient.pickle {
+    background-color: #8db710;
+    background-image: url("img/pickle.jpg");
+}
+
+.sandwich {
+    border: 1px solid black;
+    border-radius: 5px;
+    display: inline-block;
+    width: 300px;
+}
+
+.sandwich button {
+    background-color: transparent;
+    border-color: transparent;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    height: 20px;
+    opacity: 0.25;
+}
+
+.sandwich button:hover {
+    opacity: .75;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.sandwich button:focus {
+    outline: 0;
+}
+
+.sandwich .movement-controls {
+    float: right;
+}

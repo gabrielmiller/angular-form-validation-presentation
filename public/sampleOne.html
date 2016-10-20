@@ -1,0 +1,71 @@
+<div ng-controller="SampleOneCtrl as one">
+    <form name="one.form">
+        <div class="input-wrapper">
+            <input
+                name="email"
+                ng-model="one.model.email"
+                placeholder="Email Address"
+                required
+                type="email">
+
+            <div class="error" ng-messages="one.form.email.$error" role="alert">
+                <span ng-message="required">Required!</span>
+                <span ng-message="email">Invalid!</span>
+            </div>
+
+            <div class="error-object" ng-bind="one.form.email.$error | json" ng-if="one.form.email.$invalid"></div>
+        </div>
+
+        <div class="input-wrapper">
+            <input
+                name="password"
+                ng-model="one.model.password"
+                placeholder="Password"
+                required
+                type="password">
+
+            <div class="error" ng-messages="one.form.password.$error" role="alert">
+                <span ng-message="required">Required!</span>
+            </div>
+
+            <div class="error-object" ng-bind="one.form.password.$error | json" ng-if="one.form.password.$invalid"></div>
+        </div>
+
+        <div class="input-wrapper">
+            <input
+                name="username"
+                ng-model="one.model.username"
+                ng-maxlength="16"
+                ng-minlength="3"
+                placeholder="Username"
+                required
+                type="text">
+
+            <div class="error" ng-messages="one.form.username.$error" role="alert">
+                <span ng-message="required">Required!</span>
+                <span ng-message="maxlength">Too long!</span>
+                <span ng-message="minlength">Too short!</span>
+            </div>
+
+            <div class="error-object" ng-bind="one.form.username.$error | json" ng-if="one.form.username.$invalid"></div>
+        </div>
+
+        <div class="input-wrapper">
+            <input
+                name="number"
+                ng-model="one.model.number"
+                ng-pattern="/^[\d]*$/"
+                placeholder="Favorite number"
+                required
+                type="text">
+
+            <div class="error" ng-messages="one.form.number.$error" role="alert">
+                <span ng-message="required">Required!</span>
+                <span ng-message="pattern">Numbers only!</span>
+            </div>
+
+            <div class="error-object" ng-bind="one.form.number.$error | json" ng-if="one.form.number.$invalid"></div>
+        </div>
+    </form>
+    <h1>Form is <span ng-class="{'valid': one.form.$valid, 'invalid': one.form.$invalid}" ng-bind="(one.form.$valid ? 'valid' : 'invalid')"></span>!</h1>
+</div>
