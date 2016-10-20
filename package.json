@@ -17,7 +17,7 @@
         "gulp-ng-annotate": "2.0.0",
         "gulp-webserver": "0.9.1",
         "jshint": "2.9.3"
-    }
+    },
     "repository": {
         "type" : "git",
         "url" : "https://github.com/gabrielmiller/angular-form-validation-presentation.git"
