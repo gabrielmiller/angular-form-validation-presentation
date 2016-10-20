@@ -1,6 +1,6 @@
 <div ng-controller="SampleTwoCtrl as two">
     <form name="two.form">
         <ng-sandwich ng-repeat="sandwich in two.model.sandwiches" ng-model="sandwich"></ng-sandwich>
-        <h2>Your sandwiches are {{(two.form.$valid ? 'valid' : 'invalid')}}!</h2>
     </form>
+    <h1>Form is <span ng-class="{'valid': two.form.$valid, 'invalid': two.form.$invalid}" ng-bind="(two.form.$valid ? 'valid' : 'invalid')"></span>!</h1>
 </div>

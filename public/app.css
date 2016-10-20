@@ -113,3 +113,12 @@ body {
 .sandwich .movement-controls {
     float: right;
 }
+
+.sample-two .invalid {
+    background-color: red;
+}
+
+.sample-two .valid {
+    background-color: green;
+}
+
